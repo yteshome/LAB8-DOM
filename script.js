@@ -40,22 +40,3 @@ var text2 = document.createElement('p');
 var text3 = document.createElement('p');
   text3.innerText = 'Grand Total  ' +  grandTotal.toFixed(2);
   document.body.appendChild(text3);
-
-
-
-
-
-// // console.log('Total b4 tax is $ ' + total.toFixed(2));
-//
-// var tax = total * 0.06;
-// var grandTotal = total + tax;
-//
-// console.log('6% sales tax is $  '+ tax.toFixed(2));
-// console.log(' grand total is $ ' + grandTotal.toFixed(2));
-//
-// groceryList.push({name: 'Tea bags', qty: 2, price: 7.99}),
-//
-// console.log(groceryList);
-//
-// groceryList.shift(0,2);
-// console.log(groceryList);
