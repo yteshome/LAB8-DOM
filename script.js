@@ -1,45 +1,61 @@
-// adding items in an array
 var groceryList = [
-  {
-    name: 'juice ',
-    price: 3.99
-  },
-  {
-    name: 'braad ',
-    price: 2.75
-  },
+  { name: 'Juice ',
+    qty: 1,
+    price: 3.99},
 
-  {
-    name: 'butter',
-    price: 2.59
-  },
-  {
-    name: 'cereal',
-    price: 3.59,
-  }
+  {name: 'Braad ',
+    qty: 2,
+    price: 2.99},
+
+  {name: 'Butter',
+    qty: 4,
+    price: 2.59 },
+
+  {name: 'Cereal',
+    qty: 3,
+    price: 3.59,}
 ];
 
 var total = 0;
 
 groceryList.forEach(function(item){
-// console.log(item.name);
-// console.log(item.price.toFixed(2));
- console.log( item.name + ' is $ '+ item.price.toFixed(2));
- total += item.price;
+  var listitem = document.createElement('ul');
+  listitem.innerText = item.qty + '      ' + item.name + '   each      $ '+ item.price.toFixed(2) + '   costs ...........................              $  ' + item.price * item.qty;
+  document.body.appendChild(listitem);
 
+ total += item.price.toFixed(2) * item.qty;
 });
-
-console.log('Total b4 tax is $ ' + total.toFixed(2));
 
 var tax = total * 0.06;
 var grandTotal = total + tax;
 
-console.log('6% sales tax is $  '+ tax.toFixed(2));
-console.log(' grand total is $ ' + grandTotal.toFixed(2));
+var text1 = document.createElement('p');
+  text1.innerText = 'Sub Total    ' + total.toFixed(2);
+  document.body.appendChild(text1);
 
-groceryList.push({name: 'steak', price: 7.99}),
+var text2 = document.createElement('p');
+  text2.innerText = ' Sales Tax   ' +  tax.toFixed(2);
+  document.body.appendChild(text2);
 
-console.log(groceryList);
+var text3 = document.createElement('p');
+  text3.innerText = 'Grand Total  ' +  grandTotal.toFixed(2);
+  document.body.appendChild(text3);
 
-groceryList.shift(0,2);
-console.log(groceryList);
+
+
+
+
+// // console.log('Total b4 tax is $ ' + total.toFixed(2));
+//
+// var tax = total * 0.06;
+// var grandTotal = total + tax;
+//
+// console.log('6% sales tax is $  '+ tax.toFixed(2));
+// console.log(' grand total is $ ' + grandTotal.toFixed(2));
+//
+// groceryList.push({name: 'Tea bags', qty: 2, price: 7.99}),
+//
+// console.log(groceryList);
+//
+// groceryList.shift(0,2);
+// console.log(groceryList);
