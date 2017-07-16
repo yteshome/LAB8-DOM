@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <title>LAB 8 Shopping List</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>LAB 8 Grocery list </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Grocery List</h1>
+    <h3>Here are your Items</h3>
 
-      <div class="header">
+    <div id="wrapper"></div>
 
-        <h1>Grocery List</h1>
-        <h3>Here are your Items</h3>
-      </div>
+    <form>
+      <input id="product" type="text" size="20" name="item" placeholder="Item">
+      <input id="quantity" type="number" size="10" name="qty" placeholder="Quantity">
+      <input id="cost" type="number" size="10" name="price" placeholder="Price">
+    </form>
 
-      <form class="" action="index.html" method="submit">
-          <input type="text" size="25" name="item" placeholder="Item"><br>
-          <input type="text" size="10" name="qty" placeholder="Quantity"><br>
-          <input type="text" size="10" name="price" placeholder="Price"><br>
-          <input type="submit" value="Add Item"><br>
-      </form>
+    <button onclick="addItem()">Add</button>
 
-        <ul id = "item"></ul>
-        
+    <ul id = "item"></ul>
 
-<script src="script.js"></script>
-
-
-  </body>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>

@@ -1,47 +1,70 @@
-.header {
-background-color:  coral;
-margin: 10px 250px 10px 250px;
-border: 20px;
-height: 100px;
-}
-
 body {
-  background-color: lightgray;
+  background-image: url(images/grocerystore.jpg);
+  background-attachment: fixed ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 
-h1 {
-  text-align: center;
-  font-family: neuropol;
-}
-
-h3 {
-  text-align: center;
-  font-family: handlee;
-}
-
-ul, p {
-  text-align: center;
-  font-family: handlee;
-  font-weight: bold;
-  font-size: 18px;
-  margin-right: 300px;
-}
-
-p {
-  margin-left: 700px;
-}
-
-
-form, input {
-  font-size: 18px;
-  margin-top: 10px;
-  font-family: handlee;
-  font-weight: bold;
-  text-align: center;
-}
-
-.list {
-    font-family:garamond;
-    color:navy;
-    font-weight: bold;
+  .container {
+    background-color:  coral;
+    height: 680px;
+    width: 400px;
+    margin: 0px 350px 10px 450px;
+    border: 20px;
+    border-radius: 10px;
   }
+
+  h1 {
+    text-align: center;
+    font-family: neuropol;
+  }
+
+  h3 {
+    text-align: center;
+    font-family: handlee;
+  }
+
+  h2 {
+    font-family:arial;
+  }
+
+  form {
+    display: inline-block;
+    margin-left: 30%;
+    font-family: handlee;
+    font-weight: bold;
+    height:50px;
+    width:70px;
+  }
+
+  input {
+    margin-bottom: 10px;
+  }
+
+  button {
+    display: inline-block;
+    height:20px;
+    width:70px;
+    background-color:#cc0000;
+    font-weight:bold;
+    color:#ffffff;
+    border-radius: 5px;
+    text-align:center;
+    margin-top:10px;
+    margin-left: 35%;
+  }
+
+  p {
+    /*font-family: Arial;*/
+
+    }
+
+#wrapper{
+  font-family: arial;
+  text-align: center;
+  display: inline;
+  line-height: 30%;
+  
+}
