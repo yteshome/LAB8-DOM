@@ -12,10 +12,7 @@ var groceryList = [
     qty: 4,
     price: 2.59 },
 
-  {name: 'Cereal',
-    qty: 3,
-    price: 3.59,}
-];
+  ];
 
 function addItem() {
   //info from forms

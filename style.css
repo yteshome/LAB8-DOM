@@ -8,12 +8,13 @@ body {
 }
 
   .container {
-    background-color:  coral;
-    height: 680px;
-    width: 400px;
-    margin: 0px 350px 10px 450px;
+    background-color: #66ff66;
+    /*height: 680px;*/
+    width: 350px;
+    /*margin: 0px 350px 10px 450px;*/
     border: 20px;
     border-radius: 10px;
+
   }
 
   h1 {
@@ -41,11 +42,13 @@ body {
 
   input {
     margin-bottom: 10px;
+    border-radius: 5px;
+    height: 25px;
   }
 
   button {
     display: inline-block;
-    height:20px;
+    height:30px;
     width:70px;
     background-color:#cc0000;
     font-weight:bold;
@@ -66,5 +69,5 @@ body {
   text-align: center;
   display: inline;
   line-height: 30%;
-  
+
 }
